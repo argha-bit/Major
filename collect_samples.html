@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
+      integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="main">
+      <h1 class="main_tit">Welcome to Quickpeek</h1>
+      <div class="container-fluid" id="container">
+        <div class="row">
+          <!-- 1st column -->
+          <div class="col-lg-8 col-md-12">
+            <div id="video-call-div">
+              <img class="live_img" src="images/live.jpeg" alt="image-mockup" />
+            </div>
+            <div id="Special">
+            <table class="table_name">
+              <tr>
+                <td><h3 class="user">Enter User Name:</h3></td>
+                <td>
+                  <input
+                    type="text"
+                    class=""
+                    name=""
+                    value=""
+                    id="username-input"
+                  />
+                </td>
+              </tr>
+            </table>
+            <button
+              type="button"
+              class="btn btn-outline-light btn-lg btn-join btn_select"
+              id="int-button"
+              onclick="joinCall()"
+            >
+              <i class="fas fa-video"></i> Join
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-light btn-lg btn-join btn_select"
+              id="int-button"
+              onclick="stopCall()"
+            >
+              <i class="fas fa-stop"></i> stop
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-light btn-lg btn-join btn_select"
+              id="int-button"
+              onclick="playCall()"
+            >
+              <i class="fas fa-play"></i> Play
+            </button>
+            </div>
+          </div>
+
+          <div id="user" class="col-lg-4 col-md-12">
+            <h4 class="collect_h4">Hey There! Collect Samples!!!</h4>
+
+            <button
+              type="button"
+              class="btn btn-outline-light btn-lg btn-collect btn_select"
+              id="int-button"
+              onclick="postData1()"
+            >
+              <i class="fas fa-user-alt"></i> collect
+            </button>
+            <!-- <input type="button" id='script' name="scriptbutton" value="collect" onclick="postData1()"> -->
+
+            <h4 class="collect_h4 user_details">
+              <center>User Details</center>
+            </h4>
+            <script>
+              //   function postData1() {
+              //     $.ajax({
+
+              //         url: "http://127.0.0.1:5000",
+              //         context:document.body,
+              // 		success: function() {
+              // 		console.log("success"); },
+              // 		error: function() {
+              // 		console.log("pail"); }
+              //     }).done (function() {alert("done")});
+              // }
+
+              var requestOptions = {
+                method: "GET",
+                redirect: "follow",
+              };
+
+              async function postData1() {
+                await fetch("http://localhost:8080/faces", requestOptions)
+                  .then((response) => response.text())
+                  .then((result) => console.log(result))
+                  .catch((error) => console.log("error", error));
+              }
+
+              async function userData() {
+                // let labelName = document.createElement('h6');
+                // labelName.innerHTML = localStorage.getItem('Name');
+                // let userId = document.createElement('h6')
+                // let
+                var myHeaders = new Headers();
+                myHeaders.append("Content-Type", "application/json");
+
+                var raw = JSON.stringify({
+                  id: localStorage.getItem("id"),
+                });
+
+                var requestOptions = {
+                  method: "POST",
+                  headers: myHeaders,
+                  body: raw,
+                  redirect: "follow",
+                };
+
+                let result = await fetch(
+                  "http://localhost:8080/userinfo",
+                  requestOptions
+                )
+                  .then((response) => response.json())
+                  .catch((error) => console.log("error", error));
+                console.log(result);
+                let UserName = document.createElement("h5");
+                UserName.innerHTML = localStorage.getItem("Name");
+                UserName.style.color = "#fff";
+                UserName.className = "py-2";
+
+                let userEmail = document.createElement("h5");
+                userEmail.innerHTML = localStorage.getItem("email");
+                userEmail.style.color = "#fff";
+                userEmail.className = "py-2";
+                let para = document.createElement("h5");
+
+                para.innerHTML = `You can See all your new UnAuthorized Videos by tapping the Links here, Please Refresh The page to see new Videos`;
+                para.style.color = "#fff";
+                para.className = "py-5";
+                //para.style.textAlign = "center"
+                let videoList = document.createElement("ul");
+
+                let linkDivision = document.createElement("div");
+
+                linkDivision.style.overflowX = "hidden";
+                linkDivision.style.width = "200px";
+                linkDivision.style.height = "150px";
+                linkDivision.append(videoList);
+                linkDivision.className = "py-3";
+                result.dataRepo.forEach((link, index) => {
+                  let item = document.createElement("li");
+                  let linktoVideo = document.createElement("a");
+                  linktoVideo.setAttribute("href", link);
+                  linktoVideo.innerText = `Video ${index + 1}`;
+
+                  //item.innerHTML = `Video ${index+1}`;
+                  item.append(linktoVideo);
+                  videoList.append(item);
+                });
+                document.querySelector("#user").append(UserName);
+                document.querySelector("#user").append(userEmail);
+                document.querySelector("#user").append(para);
+                document.querySelector("#user").append(linkDivision);
+                let vid = document.querySelector("#video-call-div");
+                if (result.live!== "No") {
+                  vid.innerHTML = null;
+                  
+
+                  let video1 = document.createElement("video");
+
+                  video1.setAttribute("id", "remote-video");
+
+                  vid.append(video1);
+
+                  video1.autoplay = true;
+                }
+                else document.getElementById('Special').style.display = 'none'
+
+
+              }
+              userData();
+              function stopCall() {
+                document.getElementById("remote-video").pause();
+              }
+              function playCall() {
+                document.getElementById("remote-video").play();
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./reciever.js"></script>
+  </body>
+</html>

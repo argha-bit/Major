@@ -1,0 +1,241 @@
+body{
+  font-family: Montserrat;
+}
+#title
+{
+
+   background-color: #000000;
+  color: #fff;
+}
+.h11
+{
+  font-family:"Montserrat";
+  font-size: 3.5rem;
+  line-height: 1.5;
+  /* text-align: center; */
+
+}
+#h21
+{
+  font-family: Montserrat;
+  font-size: 3.5rem;
+}
+#container
+{
+  padding: 3% 15% 7%;
+}
+/* for navagation bar*/
+#n1{
+  padding-bottom: 4.5rem;
+}
+#nav
+{
+  font-size: 2rem;
+    font-family:"Montserrat";
+  /* font-weight: bold; */
+  /* font-style: luclida; */
+}
+
+.nav-item
+{
+  padding: 0 18px;
+}
+.nav-link
+{
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+
+
+.camimg
+{
+
+margin-left: 20%;
+
+border-radius: 50%;
+
+}
+
+/* feaatures section */
+#features
+{
+  padding: 7% 15%;
+  background-color: #fff;
+
+}
+
+#feature-box
+{
+  text-align:center;
+  padding: 5% ;
+
+}
+p{
+  color: #8f8f8f;
+}
+.icon{
+color: 	#000080;
+margin-bottom: 1rem;
+}
+.icon:hover
+{
+  color: 	#008000;
+}
+
+#login
+{
+  background-color: #000000;
+  text-align: center;
+  color: #fff;
+  padding: 15% 15% 12%;
+
+
+}
+
+#h1login{
+font-family: Montserrat;
+font-size: 3rem;
+margin-bottom: 50px;
+}
+
+#int-buttons{
+ /* padding-top: 20px; */
+   margin: 5% 3% 5% 0;
+
+}
+#last
+{
+text-align: center;
+  padding: 5% 15% 4%;
+
+}
+#pp
+{
+  text-align: center;
+  padding-right: 3%;
+}
+.icon1
+{
+  padding-right: 2%;
+  padding-bottom: 3%;
+}
+.icon1:hover
+{
+    color: 	#9400D3;
+}
+
+.btnc
+{
+  color: #fff;
+}
+/* for register css file */
+.bg
+{
+
+background: url('images/mac3.jpg') no-repeat;
+width: 100%;
+height: 100vh;
+  background-size: 1550px 750px;
+}
+.fm
+{
+  font-family: Montserrat;
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.bt
+{
+  margin-top: 20px;
+}
+.fm-label
+{
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+
+}
+.form-cointainer
+{
+  border: 0px solid #fff;
+  padding: 15% 10%;
+  -webkit-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+  box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+}
+
+/* for live streaming and collecting samples */
+#main{
+  background-color: #000;
+
+}
+.main_tit
+{
+  color: #fff;
+  text-align: center;
+  padding-top: 2%;
+  font-family: Montserrat;
+  letter-spacing: 4px;
+
+
+}
+
+.live_img
+{
+
+   width: 550px;
+   height: 500px;
+   margin-bottom: 40px;
+   border-radius: 20%
+  /* padding 3% 3%; */
+
+}
+.user{
+  /* margin-top: 20px; */
+  color: #fff;
+  padding-right: 20px;
+  font-family: Montserrat;
+}
+.table_name
+{
+    margin-bottom: 30px;
+}
+.btn-join
+{
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.collect_h4
+{
+  color: #fff;
+  font-style: Montserrat;
+  text-align: center;
+}
+.btn-collect{
+  margin-top: 30px;
+  margin-left: 100px;
+
+}
+.user_details
+{
+  margin-top: 30px;
+}
+.btn_select
+{
+  font-family: Montserrat;
+}
+
+/* for signup */
+.bg-signup
+{
+
+background: url('images/mac7.jpeg') no-repeat;
+width: 100%;
+height: 100vh;
+  background-size: 1550px 750px;
+}
+.labels{
+  font-style: Montserrat;
+  color: #fff;
+}
